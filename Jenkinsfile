@@ -27,6 +27,7 @@ pipeline {
     stage('Prod') {
       steps {
         echo 'Prod done'
+        mail(subject: 'Build done ', body: 'Jenkins', from: 'jeevankv18@gmail.com', to: 'jeevankv2000@gmail.com')
       }
     }
 
